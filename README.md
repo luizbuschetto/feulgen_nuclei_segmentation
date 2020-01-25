@@ -1,4 +1,4 @@
-<img src="fig/header.png" alt="Header - LAPIX">
+<img src="figs/header.png" alt="Header - LAPIX">
 
 This is the implementation of the neural network used in our paper <a href="url">Towards a Complete Pipeline for Segmenting Nuclei in Feulgen-Stained Images</a>.
 
@@ -10,7 +10,7 @@ Cervical cancer is the second most common cancer type in women around the world.
 
 The Figure below shows an overview of the entire process
 
-<img src="fig/abstract_figure.png" alt="process_overview">
+<img src="figs/abstract_figure.png" alt="process_overview">
 
 The first step consists in getting the image file of the scanned slide and submit it to the corresponding <a href="https://www.zeiss.com/microscopy/int/products/microscope-software/zen-lite.html">software</a> to generate the image patches (cropping process) that will be used to train the network. The software generate images of 1200x1600 pixels. Training the network for semantic segmentation is the second step, where we used the <a href="https://www.fast.ai/">fast.ai</a> framework. The post-processing step consists in using image processing methods to improve the outcome of the network. The last step is the evaluation of the results, which was done in post-processed images using the IoU metric.
 
