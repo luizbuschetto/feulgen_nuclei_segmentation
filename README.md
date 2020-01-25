@@ -12,6 +12,9 @@ The Figure below shows an overview of the entire process
 
 <img src="fig/abstract_figure.png" alt="process_overview">
 
-The first step consists in getting the image file of the scanned slide and submit it to the corresponding <a href="https://www.zeiss.com/microscopy/int/products/microscope-software/zen-lite.html">software</a> to generate the image patches (cropping process) that will be used to train the network. The software generate images of 1200x1600 pixels. Training the network (training.ipynb) for semantic segmentation is the second step, where we used the <a href="https://www.fast.ai/">fast.ai</a> framework. The post-processing step (post-processing.py) consists in using image processing methods to improve the outcome of the network. The last step is the evaluation (evaluation.py) of the results, which was done in post-processed images using the \ac{IoU} metric.
+The first step consists in getting the image file of the scanned slide and submit it to the corresponding <a href="https://www.zeiss.com/microscopy/int/products/microscope-software/zen-lite.html">software</a> to generate the image patches (cropping process) that will be used to train the network. The software generate images of 1200x1600 pixels. Training the network for semantic segmentation is the second step, where we used the <a href="https://www.fast.ai/">fast.ai</a> framework. The post-processing step consists in using image processing methods to improve the outcome of the network. The last step is the evaluation of the results, which was done in post-processed images using the IoU metric.
+
+<h1>Post-processing and Evaluation</h1>
+On this step, we can use the "post-processing-and-evaluation.py". It takes as input three images: the input image, the network output, and the ground truth. It will apply the post-processing step and calculate the IoU for the image.
 
 Unfortunately, for legal reasons (patient data), we cannot share the data and the pre-treined model. For further information, refer to:
