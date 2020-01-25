@@ -41,7 +41,7 @@ The directory tree should be organized as follows:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── image_n.png <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <...> <br>
 
-You can use the "codes.txt" file present in this repository. It just contains the classes that we want to train. The mask must have the pixel values exact as it is in codes file. For example, in this application, we want to segment the images in "Background" and "Nuclei" classes. So, that is the order that appears on codes file. The ground truth should be an image where the background pixels values are zero (In Python notation - <code>ground_truth[x, y, :] = (0, 0, 0)</code>) and the Nuclei pixels are 1 (<code>ground_truth[x, y, :] = (1, 1, 1)</code>). Different from that, the fast.ai will raise an exception.
+<br>You can use the "codes.txt" file present in this repository. It just contains the classes that we want to train. The mask must have the pixel values exact as it is in codes file. For example, in this application, we want to segment the images in "Background" and "Nuclei" classes. So, that is the order that appears on codes file. The ground truth should be an image where the background pixels values are zero (In Python notation - <code>ground_truth[x, y, :] = (0, 0, 0)</code>) and the Nuclei pixels are 1 (<code>ground_truth[x, y, :] = (1, 1, 1)</code>). Different from that, the fast.ai will raise an exception.
 
 <h1>Post-processing and Evaluation</h1>
 On this step, we can use the "post-processing-and-evaluation.py". It takes as input three images: the input image, the network output, and the ground truth. It will apply the post-processing step and calculate the IoU for the image.
