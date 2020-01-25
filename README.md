@@ -16,8 +16,7 @@ The first step consists in getting the image file of the scanned slide and submi
 
 <h2>Data</h2>
 The directory tree should be organized as follows:
-<br>
-<b>Dataset</b> (root) <br>
+<br><br><b>Dataset</b> (root) <br>
 ├── images <br>
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── train <br>
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 1.png <br>
