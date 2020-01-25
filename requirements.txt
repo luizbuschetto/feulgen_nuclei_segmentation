@@ -1,0 +1,6 @@
+numpy==1.17.0
+opencv-python==4.1.2.30
+Bottleneck==1.2.1
+fastai==1.0.53.post2
+torch==1.0.0  
+torchvision==0.2.2
